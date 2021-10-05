@@ -1,0 +1,8 @@
+.image_height {
+    height: 70vh;
+    object-fit: cover;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon, .carousel-indicators {
+    display: none;
+}
