@@ -18,3 +18,13 @@
 .p_wrapper > p {
   text-align: left;
 }
+
+@media screen and (max-width: 600px) {
+  .welcome_section {
+    padding: 1rem;
+  }
+
+  .p_wrapper {
+    width: 100%;
+  }
+}

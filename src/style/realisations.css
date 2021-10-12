@@ -6,6 +6,25 @@
   position: relative;
 }
 
+.realisations_wrapper > h1 {
+  color: white;
+  z-index: 5;
+  padding-top: 2rem;
+}
+
+.left_tooth {
+  position: absolute;
+  left: 0;
+  top: -10rem;
+}
+
+.right_tooth {
+  position: absolute;
+  right: 0;
+  top: -25rem;
+  z-index: 0;
+}
+
 .image-gallery {
   position: absolute;
   top: 50%;
@@ -15,4 +34,13 @@
 
 .image-gallery-content .image-gallery-slide .image-gallery-image {
   max-height: calc(60vh - 20px);
+}
+
+@media screen and (max-width: 600px) {
+  .realisations_wrapper {
+    height: 30rem;
+  }
+  .right_tooth {
+    display: none;
+  }
 }

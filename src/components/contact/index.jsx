@@ -5,13 +5,9 @@ import GoogleMaps from '../contact/maps';
 
 const ContactUs = () => {
   return (
-    <div className="contact_wrapper">
-      <div className="google_map">
-        <GoogleMaps />
-      </div>
-      <div className="contact_form">
-        <ContactForm />
-      </div>
+    <div className="contact_wrapper" id="contact">
+      <GoogleMaps />
+      <ContactForm />
     </div>
   );
 };

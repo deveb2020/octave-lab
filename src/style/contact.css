@@ -1,21 +1,15 @@
 .contact_wrapper {
-  height: 100vh;
-  background: white;
-  padding: 1rem;
-}
-
-.contact_form {
+  min-height: 100vh;
+  background-color: rgb(21, 95, 160);
   position: relative;
-  width: 50%;
-  float: right;
 }
 
 .contact_us {
   position: absolute;
-  top: 3rem;
-  left: 50%;
-  transform: translate(-50%, 0);
-  background-color: rgba(21, 95, 160, 0.906);
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  background-color: rgba(21, 95, 160, 0.851);
   width: 34rem;
   padding: 3rem 0;
   border-radius: 15px 15px 15px 15px;
@@ -32,4 +26,56 @@
   width: 20rem;
   border-radius: 5px;
   border: none;
+}
+
+.phone_wrapper {
+  display: block;
+  justify-content: center;
+  color: white;
+}
+
+.adresse_wrapper {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .contact_us {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    background-color: rgb(21, 95, 160);
+    width: 100%;
+    padding: 3rem 0;
+    border-radius: 0;
+  }
+
+  .contact_us > input {
+    width: 90%;
+    height: 2.5rem;
+    border-radius: 0px;
+    border: none;
+  }
+
+  .contact_us > textarea {
+    width: 90%;
+    border-radius: 0px;
+    border: none;
+  }
+
+  .google_maps {
+    display: none;
+    visibility: hidden;
+  }
+
+  .adresse_wrapper {
+    display: block;
+    color: white;
+    padding-bottom: 2rem;
+  }
+
+  .write_us {
+    padding-top: 1rem;
+    margin: 0;
+  }
 }

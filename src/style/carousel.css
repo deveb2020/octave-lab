@@ -195,3 +195,11 @@
   -ms-transform: scale(0.5);
   transform: scale(0.5);
 }
+
+/* When the browser is at least 600px and above */
+@media screen and (max-width: 600px) {
+  .hexagon,
+  .hexagon2 {
+    display: none;
+  }
+}

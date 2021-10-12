@@ -1,7 +1,11 @@
 .services_wrapper {
   height: 100vh;
-  background: url('../assets/images/hexagon.png');
-  padding: 1rem;
+  width: 100%;
+  background-color: rgb(12, 85, 140);
+  position: relative;
+}
+
+.cards_wrapper {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -9,10 +13,24 @@
   align-items: center;
 }
 
+.services_wrapper > img {
+  position: absolute;
+  top: -20rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 90%;
+}
+
+.services_wrapper > h1 {
+  color: white;
+  padding-bottom: 2rem;
+}
+
 .hexagon_activity {
   position: relative;
-  margin: 1rem;
   background-color: #64c7cc;
+  z-index: 4;
+  margin: 1rem;
   width: 16rem;
   height: 18rem;
   -webkit-clip-path: polygon(
@@ -51,4 +69,14 @@
 
 .CFAO {
   background: url('../assets/images/conjointe.png') center / 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .services_wrapper {
+    height: 100%;
+  }
+
+  .services_wrapper > h1 {
+    padding-top: 2rem;
+  }
 }

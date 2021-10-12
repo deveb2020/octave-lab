@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Navigation = () => {
   return (
@@ -21,10 +22,18 @@ const Navigation = () => {
         id="responsive-navbar-nav"
       >
         <Nav>
-          <Nav.Link href="#deets">LE LABORATOIRE</Nav.Link>
-          <Nav.Link href="#memes">LES SERVICES </Nav.Link>
-          <Nav.Link href="#features">GALERIE </Nav.Link>
-          <Nav.Link href="#pricing">CONTACT</Nav.Link>
+          <Nav.Link>
+            <Link to="laboratoire">LE LABORATOIRE</Link>
+          </Nav.Link>
+          <Nav.Link>
+            <Link to="services">LES SERVICES</Link>
+          </Nav.Link>
+          <Nav.Link>
+            <Link to="galerie">GALERIE</Link>
+          </Nav.Link>
+          <Nav.Link>
+            <Link to="contact">CONTACT</Link>
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

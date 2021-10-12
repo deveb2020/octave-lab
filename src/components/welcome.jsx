@@ -3,7 +3,7 @@ import 'style/welcome.css';
 
 const Welcome = () => {
   return (
-    <section className="welcome_section">
+    <section className="welcome_section" id="laboratoire">
       <h1>BIENVENUE AU LABORATOIRE OCTAVE-LAB</h1>
       <div className="p_wrapper">
         <p>
