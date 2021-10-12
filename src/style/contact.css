@@ -1,0 +1,35 @@
+.contact_wrapper {
+  height: 100vh;
+  background: white;
+  padding: 1rem;
+}
+
+.contact_form {
+  position: relative;
+  width: 50%;
+  float: right;
+}
+
+.contact_us {
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgba(21, 95, 160, 0.906);
+  width: 34rem;
+  padding: 3rem 0;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.contact_us > input {
+  width: 20rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact_us > textarea {
+  width: 20rem;
+  border-radius: 5px;
+  border: none;
+}

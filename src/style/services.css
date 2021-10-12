@@ -1,0 +1,54 @@
+.services_wrapper {
+  height: 100vh;
+  background: url('../assets/images/hexagon.png');
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.hexagon_activity {
+  position: relative;
+  margin: 1rem;
+  background-color: #64c7cc;
+  width: 16rem;
+  height: 18rem;
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hexagon_activity > .card_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  background-color: azure;
+  width: 100%;
+  color: rgb(13, 108, 159);
+}
+
+.Conjointe {
+  background: url('../assets/images/conjointe.png') center / 100%;
+}
+
+.Adjointe {
+  background: url('../assets/images/conjointe.png') center / 100%;
+}
+
+.Implontologie {
+  background: url('../assets/images/conjointe.png') center / 100%;
+}
+
+.CFAO {
+  background: url('../assets/images/conjointe.png') center / 100%;
+}

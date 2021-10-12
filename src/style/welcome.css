@@ -1,0 +1,20 @@
+.welcome_section {
+  background-color: rgb(12, 85, 140);
+  padding: 15rem 0;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.p_wrapper {
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding-top: 2rem;
+}
+
+.p_wrapper > p {
+  text-align: left;
+}

@@ -1,0 +1,18 @@
+@import '~react-image-gallery/styles/css/image-gallery.css';
+
+.realisations_wrapper {
+  height: 100vh;
+  background-color: rgb(12, 85, 140);
+  position: relative;
+}
+
+.image-gallery {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: calc(60vh - 20px);
+}
