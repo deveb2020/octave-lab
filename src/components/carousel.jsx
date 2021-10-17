@@ -7,7 +7,7 @@ import 'style/carousel.css';
 
 const CarouselComponent = () => {
   return (
-    <div className="carousel_wrapper">
+    <div className="carousel_wrapper" id="homepage">
       <Carousel fade>
         <Carousel.Item interval={3500}>
           <img

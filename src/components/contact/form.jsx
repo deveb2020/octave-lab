@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
-import { TelephoneFill, Building } from 'react-bootstrap-icons';
+import { TelephoneFill } from 'react-bootstrap-icons';
 
 const ContactForm = () => {
   const form = useRef();
@@ -26,12 +26,8 @@ const ContactForm = () => {
   };
 
   return (
-    <>
+    <div className="form_wrapper">
       <form className="contact_us" ref={form} onSubmit={sendEmail}>
-        <div className="adresse_wrapper">
-          <Building size={20} />
-          <span> 34 av leon blum, 33110 le bouscat</span>
-        </div>
         <div className="phone_wrapper">
           <h1>Appeler nous</h1>
           <TelephoneFill size={20} />
@@ -49,9 +45,9 @@ const ContactForm = () => {
         <textarea name="message" placeholder="Message" />
         <br />
         <br />
-        <input type="submit" value="Send" />
+        <input className="send_button" type="submit" value="Send" />
       </form>
-    </>
+    </div>
   );
 };
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import 'style/contact.css';
-import ContactForm from './form';
+import ContactForm from '../contact/form';
 import GoogleMaps from '../contact/maps';
 
 const ContactUs = () => {

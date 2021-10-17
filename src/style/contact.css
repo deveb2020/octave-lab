@@ -1,17 +1,36 @@
 .contact_wrapper {
   min-height: 100vh;
-  background-color: rgb(21, 95, 160);
-  position: relative;
+  background-color: rgb(13, 84, 145);
+  display: flex;
+}
+
+.google_maps {
+  background: url('../assets/images/dent_002.png') no-repeat left 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: rgba(255, 255, 255, 0.358) solid 2px;
+}
+
+.google_maps > iframe {
+  width: 80%;
+  height: 60%;
+  border-radius: 10px;
+}
+
+.form_wrapper {
+  background: url('../assets/images/dent_003.png') no-repeat 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact_us {
-  position: absolute;
-  top: 50%;
-  right: 10%;
-  transform: translate(0, -50%);
-  background-color: rgba(21, 95, 160, 0.851);
+  background-color: rgba(221, 226, 227, 0.975);
   width: 34rem;
-  padding: 3rem 0;
+  padding: 4rem 0;
   border-radius: 15px 15px 15px 15px;
 }
 
@@ -31,51 +50,60 @@
 .phone_wrapper {
   display: block;
   justify-content: center;
-  color: white;
+  color: rgba(62, 61, 61, 0.776);
 }
 
 .adresse_wrapper {
   display: none;
 }
 
+.send_button {
+  background-color: rgb(72, 72, 222);
+  color: white;
+}
+
 @media screen and (max-width: 600px) {
-  .contact_us {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
-    background-color: rgb(21, 95, 160);
-    width: 100%;
-    padding: 3rem 0;
-    border-radius: 0;
+  .contact_wrapper {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .contact_us > input {
-    width: 90%;
-    height: 2.5rem;
-    border-radius: 0px;
-    border: none;
+  .contact_us {
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    width: 98%;
   }
 
   .contact_us > textarea {
-    width: 90%;
-    border-radius: 0px;
-    border: none;
+    width: 94%;
+  }
+
+  .contact_us > input {
+    width: 95%;
   }
 
   .google_maps {
-    display: none;
-    visibility: hidden;
-  }
-
-  .adresse_wrapper {
+    background: url('../assets/images/dent_002.png') no-repeat left 100%;
+    width: 90%;
     display: block;
-    color: white;
-    padding-bottom: 2rem;
+    border-bottom: rgba(255, 255, 255, 0.358) solid 2px;
+    border-right: rgba(255, 255, 255, 0) solid 2px;
+    z-index: 6;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
   }
 
-  .write_us {
-    padding-top: 1rem;
-    margin: 0;
+  .form_wrapper {
+    background: url('../assets/images/dent_003.png') no-repeat 100%;
+    width: 90%;
+    display: block;
+  }
+
+  .google_maps > iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
   }
 }

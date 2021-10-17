@@ -15,7 +15,9 @@ const Navigation = () => {
       variant="light"
       bg="light"
     >
-      <Navbar.Brand href="#home">Octave-lab</Navbar.Brand>
+      <Navbar.Brand>
+        <Link to="homepage">Octave-lab</Link>
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse
         className="justify-content-end"
